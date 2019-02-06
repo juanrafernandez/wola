@@ -1,0 +1,6 @@
+framework module Pods_wolaTests {
+  umbrella header "Pods-wolaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
