@@ -10,6 +10,8 @@
 		2A3C509831404B69CB125AD9 /* Pods_wolaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352361F76A732D990B83DA92 /* Pods_wolaTests.framework */; };
 		353A981E21CBA8C4004BB89F /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A981D21CBA8C4004BB89F /* AppInteractor.swift */; };
 		353A982021CBA8E8004BB89F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A981F21CBA8E8004BB89F /* AppDataManager.swift */; };
+		353DB35D2254C3BE009CB295 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353DB35C2254C3BD009CB295 /* SignInViewController.swift */; };
+		353DB3602254EA6D009CB295 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353DB35F2254EA6D009CB295 /* SignInInteractor.swift */; };
 		353E3D5E21CAA308009EFCDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E3D5D21CAA308009EFCDE /* AppDelegate.swift */; };
 		353E3D6021CAA308009EFCDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E3D5F21CAA308009EFCDE /* ViewController.swift */; };
 		353E3D6321CAA308009EFCDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353E3D6121CAA308009EFCDE /* Main.storyboard */; };
@@ -21,6 +23,9 @@
 		353E3D9121CAB22C009EFCDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 353E3D9021CAB22C009EFCDE /* GoogleService-Info.plist */; };
 		353E3D9321CAB37F009EFCDE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E3D9221CAB37F009EFCDE /* LoginViewController.swift */; };
 		353FDD2F2202FBDE00A1FC3A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FDD2E2202FBDE00A1FC3A /* LoginService.swift */; };
+		35490AF4225C853F00A90E2A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35490AF3225C853F00A90E2A /* LoginInteractor.swift */; };
+		35BBE1D1225B59100091D027 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BBE1D0225B59100091D027 /* UserStore.swift */; };
+		35BBE1D4225B5C0F0091D027 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BBE1D3225B5C0F0091D027 /* User.swift */; };
 		903C9812C8297C329D7A595C /* Pods_wola.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E691CB10E2395C39433C7762 /* Pods_wola.framework */; };
 		EFB94B1A5E4120A30F1DE285 /* Pods_wolaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49917D17678FE2BBEF7EE53 /* Pods_wolaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +54,8 @@
 		352361F76A732D990B83DA92 /* Pods_wolaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wolaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		353A981D21CBA8C4004BB89F /* AppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppInteractor.swift; path = ../../../Classes/App/Interactor/AppInteractor.swift; sourceTree = "<group>"; };
 		353A981F21CBA8E8004BB89F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDataManager.swift; path = ../../../Classes/App/DataManager/AppDataManager.swift; sourceTree = "<group>"; };
+		353DB35C2254C3BD009CB295 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		353DB35F2254EA6D009CB295 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		353E3D5A21CAA308009EFCDE /* wola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wola.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		353E3D5D21CAA308009EFCDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../Classes/App/AppDelegate.swift; sourceTree = "<group>"; };
 		353E3D5F21CAA308009EFCDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +73,10 @@
 		353E3D9021CAB22C009EFCDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		353E3D9221CAB37F009EFCDE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../Classes/Modules/Login/ViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		353FDD2E2202FBDE00A1FC3A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		35490AF3225C853F00A90E2A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		357947607B44584C124E0CC9 /* Pods-wola.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wola.debug.xcconfig"; path = "Target Support Files/Pods-wola/Pods-wola.debug.xcconfig"; sourceTree = "<group>"; };
+		35BBE1D0225B59100091D027 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		35BBE1D3225B5C0F0091D027 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6D2C4E2434153DD4658E9747 /* Pods-wolaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wolaUITests.release.xcconfig"; path = "Target Support Files/Pods-wolaUITests/Pods-wolaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C7AF459017535AF038FEC1EC /* Pods-wolaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wolaTests.release.xcconfig"; path = "Target Support Files/Pods-wolaTests/Pods-wolaTests.release.xcconfig"; sourceTree = "<group>"; };
 		E49917D17678FE2BBEF7EE53 /* Pods_wolaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wolaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +153,7 @@
 		353A982321CBFA33004BB89F /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				35BBE1D0225B59100091D027 /* UserStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -153,6 +164,31 @@
 				353FDD2E2202FBDE00A1FC3A /* LoginService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		353DB35A2254C361009CB295 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				353DB35E2254EA38009CB295 /* Interactor */,
+				353DB35B2254C378009CB295 /* ViewController */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		353DB35B2254C378009CB295 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				353DB35C2254C3BD009CB295 /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		353DB35E2254EA38009CB295 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				353DB35F2254EA6D009CB295 /* SignInInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		353E3D5121CAA308009EFCDE = {
@@ -239,6 +275,7 @@
 		353E3D9521CAB3A9009EFCDE /* General */ = {
 			isa = PBXGroup;
 			children = (
+				35BBE1D2225B5BFB0091D027 /* Models */,
 				353A982421CBFA42004BB89F /* Services */,
 				353A982321CBFA33004BB89F /* Stores */,
 			);
@@ -248,6 +285,7 @@
 		353E3D9621CAB3B0009EFCDE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				353DB35A2254C361009CB295 /* SignIn */,
 				353E3D9721CAB3B5009EFCDE /* Login */,
 			);
 			path = Modules;
@@ -256,6 +294,8 @@
 		353E3D9721CAB3B5009EFCDE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				35490AF2225C851800A90E2A /* DataManager */,
+				35490AF1225C850C00A90E2A /* Interactor */,
 				353E3D9821CAB3C0009EFCDE /* ViewController */,
 			);
 			path = Login;
@@ -267,6 +307,29 @@
 				353E3D9221CAB37F009EFCDE /* LoginViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		35490AF1225C850C00A90E2A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				35490AF3225C853F00A90E2A /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		35490AF2225C851800A90E2A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		35BBE1D2225B5BFB0091D027 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35BBE1D3225B5C0F0091D027 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7DA228E50ED082313DFCD390 /* Frameworks */ = {
@@ -292,6 +355,7 @@
 				353E3D5821CAA308009EFCDE /* Resources */,
 				E124723714D4A66A43A9F41B /* [CP] Embed Pods Frameworks */,
 				807F7B1B36558E4544B9FEF5 /* [CP] Copy Pods Resources */,
+				355B898E220C91AA004A7865 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -412,6 +476,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		355B898E220C91AA004A7865 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3839e39851c82e350b94903ecd80f8aef599aa2e 0c09c9dbb9866a77303918ca0c83b10ee44902a2586b005d48061fba9f97d881\n";
+		};
 		4858D7DE94BC9912FA4C5F9B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,9 +621,14 @@
 				353A981E21CBA8C4004BB89F /* AppInteractor.swift in Sources */,
 				353E3D6621CAA308009EFCDE /* wola.xcdatamodeld in Sources */,
 				353E3D6021CAA308009EFCDE /* ViewController.swift in Sources */,
+				353DB35D2254C3BE009CB295 /* SignInViewController.swift in Sources */,
 				353E3D5E21CAA308009EFCDE /* AppDelegate.swift in Sources */,
+				35BBE1D1225B59100091D027 /* UserStore.swift in Sources */,
 				353A982021CBA8E8004BB89F /* AppDataManager.swift in Sources */,
+				35490AF4225C853F00A90E2A /* LoginInteractor.swift in Sources */,
 				353FDD2F2202FBDE00A1FC3A /* LoginService.swift in Sources */,
+				353DB3602254EA6D009CB295 /* SignInInteractor.swift in Sources */,
+				35BBE1D4225B5C0F0091D027 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,13 +805,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WBTZZ2PG5U;
+				DEVELOPMENT_TEAM = CLWHC69S9M;
 				INFOPLIST_FILE = wola/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wola.wola;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jr.wola;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -737,13 +824,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WBTZZ2PG5U;
+				DEVELOPMENT_TEAM = CLWHC69S9M;
 				INFOPLIST_FILE = wola/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wola.wola;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jr.wola;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

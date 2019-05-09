@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
+  - Crashlytics (3.11.1):
+    - Fabric (~> 1.8.1)
+  - Fabric (1.8.2)
   - GoogleSignIn (4.3.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -23,11 +26,15 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
+  - Fabric
   - GoogleSignIn
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Crashlytics
+    - Fabric
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
@@ -35,11 +42,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
+  Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
   GoogleSignIn: 11183592dc63e105475c7305a325045ff95e02b7
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
 
-PODFILE CHECKSUM: 8c2835a2355d9997fbe096d444de9d66cf5245f1
+PODFILE CHECKSUM: 7089f33426fe4122b0a04b7234de330489270810
 
 COCOAPODS: 1.6.0.beta.2

@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -17,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var appInteractor: AppInteractor = AppInteractor()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Fabric.with([Crashlytics.self])
         // Override point for customization after application launch.
         //763663616840-4qvpggojuk9ib7irvn8q811h256d4q0b.apps.googleusercontent.com
         GIDSignIn.sharedInstance()?.clientID = "763663616840-b7tr1gfk9vlp898l3a0vf897058sh84s.apps.googleusercontent.com"
@@ -118,14 +121,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let givenName = user.profile.givenName
             let familyName = user.profile.familyName
             let email = user.profile.email
-            // ...
+            
         }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
-        // ...
+        
     }
     
 }

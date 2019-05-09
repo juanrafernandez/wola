@@ -8,6 +8,8 @@ target 'wola' do
   # Pods for wola
   pod 'GoogleSignIn'
   pod 'Alamofire'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'wolaTests' do
     inherit! :search_paths

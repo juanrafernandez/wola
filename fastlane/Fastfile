@@ -1,24 +1,38 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "2.68.0"
 
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "0701505e-29c6-45df-9f15-4be6989aa803"
 
-default_platform(:ios)
+default_platform :ios
 
-platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
-    puts("Hello Fastlane has finished your build")
-  end
+# Fastfile actions accept additional configuration, but
+# don't worry, fastlane will prompt you for required
+# info which you can add here later
+lane :beta do
+  # build your iOS app
+  puts("Hello Fastlane has finished your build")
+  #build_app(
+    # scheme: "YourScheme",
+    #export_method: "ad-hoc"
+  #)
+  #cert 
+  #sigh
+  #gym(
+    #scheme: "MyApp",
+  #  export_method: "ad-hoc",
+  #  export_xcargs: "-allowProvisioningUpdates"
+  #)
+
+    match(type: “adhoc”)
+    gym
+  # upload to Beta by Crashlytics
+  crashlytics(
+    api_token: "3839e39851c82e350b94903ecd80f8aef599aa2e",
+    build_secret: "0c09c9dbb9866a77303918ca0c83b10ee44902a2586b005d48061fba9f97d881"
+  )
 end
